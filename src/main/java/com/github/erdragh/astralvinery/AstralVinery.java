@@ -8,6 +8,5 @@ public class AstralVinery implements ModInitializer {
      */
     @Override
     public void onInitialize() {
-
     }
 }
