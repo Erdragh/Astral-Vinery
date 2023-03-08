@@ -14,7 +14,6 @@ import satisfyu.vinery.block.entity.StorageBlockEntity;
 @Mixin(StorageBlockEntity.class)
 public abstract class StorageBlockEntityMixin extends BlockEntity {
 
-
     public StorageBlockEntityMixin(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
     }
