@@ -3,10 +3,15 @@
   "id": "astralvinery",
   "version": "${version}",
   "name": "AstralVinery",
-  "description": "",
-  "authors": [],
+  "description": "Similarly to the Jet Suit Additions mod, this mod is intended to be part of the Create: Astral modpack. \n\nIn the future it may add more features, e.g. more sorts of wine, however right now this is just a bugfix that allows us to use Vinery blocks in structure generation and also fixes the game crashing when trying to place a Vinery block with a Create schematicannon. \n\nAs it is intended to be part of a modpack, the minecraft version in use will match the modpack. Right now this means Fabric 1.18.2.",
+  "authors": [
+    {
+      "name": "Erdragh"
+    }
+  ],
   "contact": {
-    "repo": "https://github.com/Erdragh/AstralVinery"
+    "issues": "https://github.com/Erdragh/Astral-Vinery/issues",
+    "sources": "https://github.com/Erdragh/Astral-Vinery"
   },
   "license": "MIT",
   "icon": "assets/astralvinery/icon.png",
@@ -25,6 +30,8 @@
   "depends": {
     "fabricloader": ">=0.14.14",
     "fabric": "*",
-    "minecraft": "1.18.2"
+    "minecraft": "1.18.2",
+    "create": "*",
+    "vinery": "1.1.4"
   }
 }
