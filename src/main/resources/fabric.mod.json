@@ -4,9 +4,14 @@
   "version": "${version}",
   "name": "AstralVinery",
   "description": "",
-  "authors": [],
+  "authors": [
+    {
+      "name": "Erdragh"
+    }
+  ],
   "contact": {
-    "repo": "https://github.com/Erdragh/AstralVinery"
+    "issues": "https://github.com/Erdragh/Astral-Vinery/issues",
+    "sources": "https://github.com/Erdragh/Astral-Vinery"
   },
   "license": "MIT",
   "icon": "assets/astralvinery/icon.png",
