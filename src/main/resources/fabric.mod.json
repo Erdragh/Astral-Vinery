@@ -22,6 +22,9 @@
     ],
     "main": [
       "com.github.erdragh.astralvinery.AstralVinery"
+    ],
+    "rei_client": [
+      "com.github.erdragh.astralvinery.compat.rei.AstralVineryClientPlugin"
     ]
   },
   "mixins": [
