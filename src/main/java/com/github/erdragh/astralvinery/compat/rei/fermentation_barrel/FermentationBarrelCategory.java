@@ -67,11 +67,8 @@ public class FermentationBarrelCategory implements DisplayCategory<FermentationB
                 y += 18;
             }
             x += 4;
-            if (i >= display.getInputEntries().size() - 1)
-                widgets.add(Widgets.createSlotBackground(new Point(withinBorders.x + x, withinBorders.y + y)));
-            else
-                widgets.add(Widgets.createSlot(new Point(withinBorders.x + x, withinBorders.y + y)).entries(display.getInputEntries().get(i + 1)).markInput());
-
+            if (i >= display.getInputEntries().size() - 1) widgets.add(Widgets.createSlotBackground(new Point(withinBorders.x + x, withinBorders.y + y)));
+            else widgets.add(Widgets.createSlot(new Point(withinBorders.x + x, withinBorders.y + y)).entries(display.getInputEntries().get(i + 1)).markInput());
         }
         widgets.add(Widgets.createSlot(new Point(withinBorders.x + 49, withinBorders.y + 34)).entries(display.getInputEntries().get(0)).markInput());
         return widgets;
