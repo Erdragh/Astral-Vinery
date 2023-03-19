@@ -11,6 +11,7 @@ import me.shedaniel.rei.api.client.gui.widgets.Widget;
 import me.shedaniel.rei.api.client.gui.widgets.Widgets;
 import me.shedaniel.rei.api.client.registry.display.DisplayCategory;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
+import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawableHelper;
@@ -20,35 +21,18 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import satisfyu.vinery.VineryIdentifier;
 import satisfyu.vinery.block.entity.CookingPotEntity;
+import satisfyu.vinery.registry.ObjectRegistry;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Environment(EnvType.CLIENT)
 public class CookingPotCategory implements DisplayCategory<CookingPotDisplay> {
-
-    public static final Identifier ICON = new VineryIdentifier("textures/item/cooking_pot.png");
     public static final Identifier BG = new VineryIdentifier("textures/gui/pot_gui.png");
 
     @Override
     public Renderer getIcon() {
-        return new Renderer() {
-            @Override
-            public void render(MatrixStack matrices, Rectangle bounds, int mouseX, int mouseY, float delta) {
-                RenderSystem.setShaderTexture(0, ICON);
-                DrawableHelper.drawTexture(matrices, bounds.x, bounds.y, 0, 0,16, 16, 16, 16);
-            }
-
-            @Override
-            public int getZ() {
-                return 0;
-            }
-
-            @Override
-            public void setZ(int z) {
-
-            }
-        };
+        return EntryStacks.of(ObjectRegistry.COOKING_POT);
     }
     @Override
     public Text getTitle() {
