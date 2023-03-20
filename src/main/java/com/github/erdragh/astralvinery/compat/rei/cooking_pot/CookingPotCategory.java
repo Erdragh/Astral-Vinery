@@ -36,7 +36,7 @@ public class CookingPotCategory implements DisplayCategory<CookingPotDisplay> {
     }
     @Override
     public Text getTitle() {
-        return new TranslatableText("rei.category.astralvinery.cooking_pot");
+        return new TranslatableText("rei.astralvinery.cooking_pot");
     }
 
     @Override
