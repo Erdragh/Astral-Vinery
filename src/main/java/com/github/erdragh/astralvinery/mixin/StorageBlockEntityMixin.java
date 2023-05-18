@@ -1,6 +1,7 @@
 package com.github.erdragh.astralvinery.mixin;
 
-import com.simibubi.create.content.schematics.SchematicWorld;
+import com.github.erdragh.astralvinery.compat.create.CreateCompatUtils;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -23,7 +24,7 @@ public abstract class StorageBlockEntityMixin extends BlockEntity {
         if (world == null) {
             ci.cancel();
         }
-        if (world instanceof SchematicWorld) {
+        if (FabricLoader.getInstance().isModLoaded("create") && CreateCompatUtils.worldIsSchematicWorld(world)) {
             ci.cancel();
         }
     }

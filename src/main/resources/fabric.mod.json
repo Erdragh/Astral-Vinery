@@ -34,7 +34,6 @@
     "fabricloader": ">=0.14.14",
     "fabric": "*",
     "minecraft": "1.18.2",
-    "create": "*",
     "vinery": "1.1.4"
   }
 }
